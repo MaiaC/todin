@@ -1,7 +1,6 @@
 import { addNewItem } from "./todos"
 import { categoryList, addCategoryToList } from "./categories"
 import { displayCategories, eventListeners } from "./display"
-import './../styles/style.scss';
 
 addCategoryToList("At work")
 addCategoryToList("At home")

@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  height: 100%; }
+
+.nav {
+  height: 70px;
+  background-color: darkcyan;
+  width: 100%;
+  position: absolute;
+  padding-left: 50px;
+  box-sizing: border-box; }
+
+.row {
+  background-color: tomato;
+  box-sizing: border-box;
+  display: flex;
+  padding: 90px 20px 20px;
+  min-height: 100%; }
+.row .categories, .row .items {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 20px; }
+.row .categories h2, .row .items h2 {
+  text-align: center; }
+.row .categories .addNew:after, .row .items .addNew:after {
+  content: "+";
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px; }
+.row .categories .cancel:after, .row .items .cancel:after {
+  content: "x";
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px; }
+.row .categories .category, .row .categories .item, .row .items .category, .row .items .item {
+  margin-bottom: 10px; }
+.row .categories .category input, .row .categories .item input, .row .items .category input, .row .items .item input {
+  float: left;
+  width: 70%; }
+.row .categories .category input:disabled, .row .categories .item input:disabled, .row .items .category input:disabled, .row .items .item input:disabled {
+  background-color: transparent;
+  border: none;
+  color: black; }
+
+.categories {
+  background-color: teal;
+  width: 30%;
+  margin-right: 20px; }
+.categories .selected {
+  font-weight: bold; }
+
+.items {
+  background-color: seagreen;
+  width: 70%; }
+.items .priority {
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 10px; }
+.items .Low {
+  background-color: yellow; }
+.items .Medium {
+  background-color: orange; }
+.items .High {
+  background-color: orangered; }
+
+/*# sourceMappingURL=style.css.map */

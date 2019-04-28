@@ -1,6 +1,6 @@
 This is a todo list project from The Odin Project
 
-It is made using JavaScript and Webpack.
+It is made using JavaScript, Webpack and SCSS.
 
 More than just a simple todo list, this app has the ability to create categories (like projects) and add items to the different categories. You can also set a priority of low, medium or high to each item.
 
