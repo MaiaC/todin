@@ -1,6 +1,5 @@
-const categoryList = [];
-  
-const addCategoryToList = (title, items=[]) => {
+const categoryList = []
+const addCategoryToList = (title, items = []) => {
   categoryList.push([title, items])
 }
 

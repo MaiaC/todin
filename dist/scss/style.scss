@@ -1,3 +1,7 @@
+@mixin border-box {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   height: 100%;
@@ -9,19 +13,19 @@ html, body {
   width: 100%;
   position: absolute;
   padding-left: 50px;
-  box-sizing: border-box;
+  @include border-box;
 }
 
 // row styling and shared category & item styling
 .row {
   background-color: tomato;
-  box-sizing: border-box;
+  @include border-box;
   display: flex;
   padding: 90px 20px 20px;
   min-height: 100%;
   .categories, .items {
     display: inline-block;
-    box-sizing: border-box;
+    @include border-box;
     position: relative;
     padding: 0 20px;
     h2 {
