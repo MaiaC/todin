@@ -1,0 +1,94 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.nav {
+  height: 70px;
+  background-color: darkcyan;
+  width: 100%;
+  position: absolute;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+// row styling and shared category & item styling
+.row {
+  background-color: tomato;
+  box-sizing: border-box;
+  display: flex;
+  padding: 90px 20px 20px;
+  min-height: 100%;
+  .categories, .items {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 20px;
+    h2 {
+      text-align: center;
+    }
+    .addNew:after {
+      content: "+";
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+    .cancel:after {
+      content: "x";
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+    .category, .item {
+      margin-bottom: 10px;
+      input {
+        float: left;
+        width: 70%;
+      }
+      input:disabled {
+        background-color: transparent;
+        border: none;
+        color: black;
+      }
+    }
+  }
+}
+
+// categories styling
+.categories {
+  background-color: teal;
+  width: 30%;
+  margin-right: 20px;
+  .selected {
+    font-weight: bold;
+  }
+}
+
+// items styling
+.items {
+  background-color: seagreen;
+  width: 70%;
+  .priority {
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+  }
+  .Low {
+    background-color: yellow;
+  }
+  .Medium {
+    background-color: orange;
+  }
+  .High {
+    background-color: orangered;
+  }
+}
