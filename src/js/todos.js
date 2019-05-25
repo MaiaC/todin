@@ -1,6 +1,6 @@
 import { categoryList } from './categories'
 
-const addNewItem = (title, num, priority = "Low") => {
+const addNewItem = (title, num, priority = 'Low') => {
 	// console.log(categoryList[num][1])
 	categoryList[num][1].push(todoFactory(title, priority))
 }
